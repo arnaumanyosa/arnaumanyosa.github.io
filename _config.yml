@@ -1,4 +1,6 @@
 # theme: jekyll-theme-minimal
 remote_theme: andrewbanchich/forty-jekyll-theme
-title: Arnau Manyosa-Plaza
+title:
 description: Front-end Dev and UX Designer
+subtitle:
+email: arnau.manyosa@protonmail.com
