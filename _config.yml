@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+remote_theme: joshgerdes/jekyll-uno
 title: Arnau Manyosa-Plaza
 description: Front-end Dev and UX Designer
