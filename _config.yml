@@ -1,5 +1,5 @@
-theme: jekyll-theme-cayman
-# remote_theme: poole/hyde
+# theme: jekyll-theme-cayman
+remote_theme: volny/creative-theme-jekyll
 title: Arnau Manyosa Plaza
 subtitle: this is a SUBtitle
 description: Front-end Dev and UX Designer
