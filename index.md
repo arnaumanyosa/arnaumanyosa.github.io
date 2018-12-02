@@ -1,4 +1,1 @@
----
-  layout:default
----
-# hola title
+<h1>hola title</h1>
