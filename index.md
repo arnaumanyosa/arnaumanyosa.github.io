@@ -1,1 +1,4 @@
+---
+  layout:default
+---
 # hola title
