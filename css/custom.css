@@ -1,0 +1,17 @@
+header .header-content {
+    top: 70%;
+}
+
+header {
+    background-color: #fcfcfc;
+    background-image: url('../img/header2.jpg');
+}
+
+header .header-content .header-content-inner h1 {
+  color: #000000;
+}
+
+header .header-content .header-content-inner p {
+  color: #000000;
+  font-weight: 500;
+}
