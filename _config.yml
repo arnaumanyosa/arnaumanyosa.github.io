@@ -3,3 +3,5 @@
 remote_theme: joshgerdes/jekyll-uno
 title: Arnau Manyosa-plaza
 description: Front-end Dev + UX Designer
+
+theme: jekyll-theme-minimal
