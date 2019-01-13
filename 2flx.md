@@ -2,7 +2,7 @@
 layout: page
 title: FLX Labs Webstudio
 description:
-image: assets/images/portfolio/flx.jpg
+image: assets/images/portfolio/flx.png
 nav-menu: true
 ---
 

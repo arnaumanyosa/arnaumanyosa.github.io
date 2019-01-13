@@ -30,12 +30,12 @@ nav-menu: true
 		<h2>Project Overview</h2>
 		<div class="row">
 			<div class="6u 12u$(small)">
-			<p>
-			Crystal+ is an IBM-internal, client-centric decision support platform based on cognitive and Big Data analytic technologies.
-			</p>
-			<p>
-			The platform focus is identifying client patterns and insights. It dramatically reduces research time, resulting in an understanding of both the client’s business issues and industry competitiveness. This enables prospect identification, recommendations and development of value propositions.
-			</p>
+				<p>
+				Crystal+ is an IBM-internal, client-centric decision support platform based on cognitive and Big Data analytic technologies.
+				</p>
+				<p>
+				The platform focus is identifying client patterns and insights. It dramatically reduces research time, resulting in an understanding of both the client’s business issues and industry competitiveness. This enables prospect identification, recommendations and development of value propositions.
+				</p>
 			</div>
 			<div class="6u$ 12u$(small)">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/H4-qGC0zbKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -54,7 +54,7 @@ nav-menu: true
 		<ul>
 			<li><b>Design Tools:</b> Sketch, inVision</li>
 			<li><b>Frontend programming:</b> Polymer (Web Components), Redux, Angular, CSS</li>
-			<li><b>Code Deployment:</b> GitHub, Jenkins, Docker/li>
+			<li><b>Code Deployment:</b> GitHub, Jenkins, Docker</li>
 		</ul>
 
 </div>
