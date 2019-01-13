@@ -21,7 +21,7 @@ nav-menu: true
 			<div class="6u 12u$(small)">
 				<ul class="alt">
 					<li><b>Role:</b> Frontend Developer</li>
-					<li><b>Frontend technologies</b> jQuery, PHP, Angular, CSS, Silverstripe CMS</li>
+					<li><b>Frontend technologies:</b> jQuery, PHP, Angular, CSS, Silverstripe CMS</li>
 					<li><b>URL:</b> <a href="https://flxlabs.com/projekte/" target="_blank">https://flxlabs.com/projekte/</a></li>
 				</ul>
 			</div>
