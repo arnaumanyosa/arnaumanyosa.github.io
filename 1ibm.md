@@ -22,7 +22,7 @@ nav-menu: true
 				<ul class="alt">
 					<li><b>Role:</b> Frontend Developer & UX Designer</li>
 					<li><b>Team:</b> Cognitive Computing & Industry Solutions</li>
-					<li><b>URL:</b> <a href="https://www.zurich.ibm.com/cognitivedecisions/">https://www.zurich.ibm.com/cognitivedecisions/</a></li>
+					<li><b>URL:</b> <a href="https://www.zurich.ibm.com/cognitivedecisions/" target="_blank">https://www.zurich.ibm.com/cognitivedecisions/</a></li>
 				</ul>
 			</div>
 		</div>
