@@ -6,27 +6,14 @@ description: With a technological soul and artistic brain, <br />I aim to create
 baseurl: "/" # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site
 author: Arnau Manyosa-Plaza
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 99
+tiles-count: 7
 
 # social settings
-500px_url:
-facebook_url:
 github_url: https://github.com/arnaumanyosa/
-gitlab_url:
-googleplus_url:
-instagram_url:
 linkedin_url: https://www.linkedin.com/in/arnaumanyosa/
-pinterest_url:
-slack_url:
 twitter_url: https://twitter.com/arnaumanyosa
 
 # build settings
