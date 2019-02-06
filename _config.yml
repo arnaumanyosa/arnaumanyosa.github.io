@@ -9,12 +9,13 @@ author: Arnau Manyosa-Plaza
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 7
+tiles-count: 8
 
 # social settings
 github_url: https://github.com/arnaumanyosa/
 linkedin_url: https://www.linkedin.com/in/arnaumanyosa/
 twitter_url: https://twitter.com/arnaumanyosa
+dribbble_url: https://dribbble.com/amplified
 
 # build settings
 markdown: kramdown

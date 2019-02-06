@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AR Invaders
-description:
+description: Personal Project
 image: assets/images/portfolio/arinvaders02.png
 nav-menu: true
 ---
