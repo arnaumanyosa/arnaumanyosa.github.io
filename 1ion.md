@@ -22,7 +22,6 @@ nav-menu: true
 				<ul class="alt">
 					<li><b>Role:</b> Designer</li>
 					<li><b>Tools:</b> Adobe Illustrator</li>
-					<li><b>URL:</b> <a href="https://dribbble.com/shots/5973563-Ion-Branding" target="_blank">https://dribbble.com/shots/5973563-Ion-Branding</a></li>
 				</ul>
 			</div>
 		</div>
@@ -31,7 +30,7 @@ nav-menu: true
 		<div class="row">
 			<div class="6u 12u$(small)">
 				<p>
-				iON (Artificial Intelligence ON) is a concept for fictional company that sells services powered by what is known to be under the umbrella of Artificial Intelligence
+				iON (Artificial Intelligence ON) is a concept for fictional company that sells services powered by what is known to be under the umbrella of Artificial Intelligence.
 				</p>
 			</div>
 			<div class="6u$ 12u$(small)">
