@@ -1,8 +1,8 @@
 # site settings
-title: Arnau Manyosa-Plaza
-subtitle: Frontend Dev + UX Designer
+title: #Arnau Manyosa-Plaza
+subtitle: #Frontend Dev + UX Designer
 email: arnau.manyosa@protonmail.com
-description: With a technological soul and artistic brain, <br />I aim to create beautiful digital experiences.
+description: I'm a certified UX Designer based in Zürich, <br />crafting beautiful digital experiences.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site
 author: Arnau Manyosa-Plaza

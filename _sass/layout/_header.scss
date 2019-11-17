@@ -37,16 +37,16 @@
 			padding: 0 1.5em;
 
 			strong {
-				@include vendor('transition', (
-					'background-color #{_duration(transition)} ease-in-out',
-					'color #{_duration(transition)} ease-in-out'
-				));
-				background-color: _palette(fg-bold);
-				color: _palette(bg);
-				display: inline-block;
-				line-height: 1.65em;
-				margin-right: 0.325em;
-				padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
+				// @include vendor('transition', (
+				// 	'background-color #{_duration(transition)} ease-in-out',
+				// 	'color #{_duration(transition)} ease-in-out'
+				// ));
+				// background-color: _palette(fg-bold);
+				// color: _palette(bg);
+				// display: inline-block;
+				// line-height: 1.65em;
+				// margin-right: 0.325em;
+				// padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
 			}
 
 			&:hover {
