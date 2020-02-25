@@ -10,55 +10,56 @@
 
 <body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <!-- Banner -->
-    <style media="screen">
-      header.major {
-        margin-bottom: 0;
-      }
-      header.major > :first-child::after {
-        content: none;
-      }
-    </style>
-    <section id="banner" class="major">
-        <div class="inner">
-            <header class="major">
-                <h1>{{ page.landing-title }}</h1>
-            </header>
-            <div class="">
-                <p class="banner-subtitle">{{ site.description }}</p>
-                <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Visit My Portfolio</a></li>
-                    <li><a href="assets/amp_cv_onepage.pdf" class="" target="_blank">or Download my CV</a></li>
-                </ul>
-            </div>
-        </div>
+  <!-- Banner -->
+  <style media="screen">
+    header.major {
+      margin-bottom: 0;
+    }
+
+    header.major> :first-child::after {
+      content: none;
+    }
+  </style>
+  <section id="banner" class="major">
+    <div class="inner">
+      <header class="major">
+        <h1>{{ page.landing-title }}</h1>
+      </header>
+      <div class="">
+        <p class="banner-subtitle">{{ site.description }}</p>
+        <ul class="actions">
+          <li><a href="#one" class="button next scrolly">Visit My Portfolio</a></li>
+          <li><a href="assets/Arnau Manyosa CV.pdf" class="" target="_blank">or Download my CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- One -->
+    {% include tiles.html %}
+
+    <!-- Two -->
+    <section id="two">
+      <div class="inner">
+        <header class="major">
+          <h2>More to come!</h2>
+        </header>
+        <p>{{ content }}</p>
+        <ul class="actions">
+          <li><a href="#one" class="button">Scroll to Top</a></li>
+          <li><a href="assets/Arnau Manyosa CV.pdf" class="" target="_blank">or Download my CV!</a></li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Main -->
-    <div id="main">
+  </div>
 
-        <!-- One -->
-        {% include tiles.html %}
-
-        <!-- Two -->
-        <section id="two">
-            <div class="inner">
-                <header class="major">
-                    <h2>More to come!</h2>
-                </header>
-                <p>{{ content }}</p>
-                <ul class="actions">
-                    <li><a href="#one" class="button">Scroll to Top</a></li>
-                    <li><a href="assets/amp_cv_onepage.pdf" class="" target="_blank">or Download my CV!</a></li>
-                </ul>
-            </div>
-        </section>
-
-    </div>
-
-    {% include footer.html %}
+  {% include footer.html %}
 
 </body>
 
