@@ -1,24 +1,25 @@
-# site settings
-title: #Arnau Manyosa-Plaza
-subtitle: #Frontend Dev + UX Designer
-email: arnau.manyosa@protonmail.com
-description: I'm a certified UX Designer based in Zürich, <br />crafting beautiful digital experiences.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url:  # the base hostname & protocol for your site
-author: Arnau Manyosa-Plaza
+# User config
+author: "Arnau Manyosa-Plaza"
+tagline: "Frontend Developer/UIUX Designer"
+greeting: "Hi, I'm Arnau."
+slogan: "Design is my passion, problem-solving is my attitude."
+current_status: "Currently working on a not-named-yet personal project."
+previous_status:
+  - company_name: "IBM Research"
+    company_url: "https://www.research.ibm.com/"
+  - company_name: "FLX Labs"
+    company_url: "https://www.flxlabs.com"
+  - company_name: "Hult Business School"
+    company_url: "https://www.hult.edu"
+keywords: "Arnau Manyosa-Plaza, Frontend, Front-end, Front end, Developer, UI, UX, Experience, Design, Designer, Happyness, Problem solver"
+email: "arnau.manyosa@protonmail.com"
+linkedin: "https://www.linkedin.com/in/arnaumanyosa/"
+github: "https://github.com/arnaumanyosa/"
+dribbble: "https://dribbble.com/amplified/"
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 9
-
-# social settings
-github_url: https://github.com/arnaumanyosa/
-linkedin_url: https://www.linkedin.com/in/arnaumanyosa/
-twitter_url: https://twitter.com/arnaumanyosa
-dribbble_url: https://dribbble.com/amplified
-
-# build settings
-markdown: kramdown
-
+# Site config
+baseurl: ""
+highlighter: rouge
 sass:
+  sass_dir: assets/scss
   style: compressed

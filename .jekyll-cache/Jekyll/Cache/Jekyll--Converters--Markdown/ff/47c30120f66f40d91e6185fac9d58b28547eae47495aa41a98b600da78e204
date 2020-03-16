@@ -1,0 +1,42 @@
+I"ù<div class="h2">Problem</div>
+<p>First version of Crystal+ features a search engine for Companies, companies' key people and IBM products. Although the application was very useful for Sales &amp; Marketing IBMers, the traditional keyword search &amp; browsing approach to navigate through the huge amounts of data  was usually <b>tedious</b>, and sometimes the obtained data was <b>difficult to understand</b>.
+</p>
+<p class="headline">Previous version navigation approach was usually tedious, and the obtained data was difficult to understand.
+</p>
+<div class="h2">Solution</div>
+<p>The second version of Crystal+ proposes a new experience using <a href="https://en.wikipedia.org/wiki/Natural-language_user_interface" target="_blank" rel="noopener noreferrer">NLQ</a> (typing or using voice) to allow the user ask more complex question and in that way reduce the number of results obtained. Beside of improving the search experience, the overall design of the application was re-done having the <a href="https://en.wikipedia.org/wiki/Natural-language_user_interface" target="_blank" rel="noopener noreferrer">Material</a> paradigm as inspiration.
+</p>
+<div class="h2">Responsabilities</div>
+<p>In a dynamic team of 5-8 people, I was responsible for User Research, Prototyping &amp; Designing and UI Development, working close and constantly aligning with the other Backend Engineers and Researchers.
+</p>
+<div class="h2">Design Methodology</div>
+<p>Although this application is a research prototype and not a final product, we were able to run some interviews with real users of the existing application to understand how it was helping them and what we could improve. The results of this interviews made us realize of some issues and confirm that our own goals where also interesting to tackle.
+</p>
+<div class="column-container">
+  <div class="column">
+    <div class="h2">User Pain points</div>
+    <ul>
+      <li>
+        <b>Understand data</b> Sometimes the data is presented in a way difficult to understand, specially charts.
+      </li>
+      <li><b>Specific results</b> Search results UIs are cluttered up with a lot of data, some of it needless</li>
+      <li><b>Poor search experience</b> Search engine is very limited User should be able to make specific questions and return very precise results.</li>
+    </ul>
+  </div>
+  <div class="column">
+    <div class="h2">Product Goals</div>
+    <ul>
+      <li>
+        <b>Better information architecture</b> presenting the data in the most understandable and meaningful way
+      </li>
+      <li><b>Introduce Natural language</b> to be able to ask very specific questions and get narrowed relevant results</li>
+      <li><b>Revamp the UI</b> with a more modern and flat design</li>
+      <li><b>Component based UI</b> to easily adapt and scale it when necessary</li>
+    </ul>
+  </div>
+</div>
+<div class="h2">Technical Side</div>
+<p>My goal for this project was to create a UI that was Component-based (to allow future scalability) and minimize framework dependency. The <a href="https://www.polymer-project.org/" target="_blank" rel="noopener noreferrer">Polymer project</a> was the perfect choice: although it is not very extended, it aims to be a Standard. Compared to the most famous frameworks at the moment (React and Angular), Polymer is more a library that allows developers to work easier with Web Components (nowadays supported by almost all browsers) by giving us some sugar functions to make our lives easier.
+</p>
+
+:ET

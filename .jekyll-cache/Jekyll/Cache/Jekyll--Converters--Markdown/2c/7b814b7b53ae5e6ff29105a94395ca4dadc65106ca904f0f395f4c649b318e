@@ -1,0 +1,35 @@
+I"<div class="h2">Situation</div>
+<p>In order to treat pain effectively, experts usually ask patients to keep a diary. Previously this was done with <a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/mcgill-pain-questionnaire" target="_blank" rel="noopener noreferrer">paper forms and pen</a>. This information had to be physically transfered to the medical staff and at some point the data had to be inserted manually in a computer.
+</p>
+<div class="h2">Solution</div>
+<p>New portable devices, specially tablets and other touchable-screen devices are an ideal tool for easy drawing. We created a multidevice application where users can paint on the screen just using the finger, manage old entries and track how the pain evolves. On top of that we planned adding features to share the data and build a community around users.
+</p>
+<div class="h2">Responsabilities</div>
+<p>I was responsible for doing user research, find their pain points and goals and using the gathered data redesign the first existing prototype. I also helped coding some parts of the UI and adapted the human body figures with transparencies so users can draw on top of it.
+</p>
+<div class="h2">Research</div>
+<p>We started intereviewing doctors and physiotherapist to get insights on what was relevant to record from a medical point of view and what kind of different patients exist. After the interviews I used the data to create Personas and Journey Maps to understand user pain points and goals, and focus in how to solve them later when designing.
+</p>
+<div class="h2">Ideation &amp; Re-Design</div>
+<p>
+Starting with all the data assembled in the research part and using an existing first <a href="https://en.wikipedia.org/wiki/Minimum_viable_product" target="_blank" rel="noopener noreferrer">MVP</a> as inspiration, I proposed a re-design for Tablets and desktop computers that later we could use for testing.
+</p>
+<p class="headline">We had the opportunity to get some real feedback from all our target users by organizing tests in cooperation with some swiss clinics.
+</p>
+<div class="h2">Testing</div>
+<p>
+We had the opportunity to get some real feedback from all our target users by organizing tests in cooperation with some swiss clinics. Having real-life cases we defined some tasks to be execute by those patients and explored our new design while making them speak aloud their thoughts. Throw this, we received very interesting feedback that allowed us to improve the redesign.
+</p>
+<div class="h2">Main Findings</div>
+<div class="column-container">
+<ul>
+  <li><b>Simplify</b> When creating a new entry, the number of touch-points could be reduced.</li>
+  <li><b>Editing mode could not be found</b> Many of the users did not realize that would be possible to edit old entries to create new ones</li>
+  <li><b>No digital-native users need guidance</b> Youngsters had no problem understanding the UI, but older people (No digital-native) needed some guidance help at the begining</li>
+</ul>
+</div>
+<div class="h2">Technology</div>
+<p>This project was developed using <a href="https://en.wikipedia.org/wiki/Sencha_Touch" target="_blank" rel="noopener noreferrer">Sencha Touch 2</a> , a Javascript UI Library focused on mobile devices. To allow users to draw on the human body figure, a series of transparent layers were used on Html Canvas.
+</p>
+
+:ET
