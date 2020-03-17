@@ -13,8 +13,8 @@
   {% include project-header.html %}
   <main class="content">
     <div class="projects-header">
-      <div class="projects-header-container">
-        <h3>{{page.project.title}}</h3>
+      <div class="container">
+        <div class="h1">{{page.project.title}}</div>
         {% if page.project.description %}
         <p>{{page.project.description}}</p>
         {% endif %}
@@ -26,12 +26,12 @@
       {% for project in page.projects %}
       <div class="container">
         <article>
-          <h1>
+          <div class="h1">
             {{ project.title }}
-          </h1>
-          <p>
+          </div>
+          <div>
             {{ project.description }}
-          </p>
+          </div>
           <a title="{{project.title}}" href="{{project.url}}">
             {{project.url_label}}
           </a>

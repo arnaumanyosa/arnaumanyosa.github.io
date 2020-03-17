@@ -213,20 +213,23 @@
 .projects-header {
   margin-bottom: 16rem;
 
-  h3{
+  .container {
+    @media (min-width: $breakpoint-medium) {
+      float: right;
+      right: 0;
+      width: 40%;
+      position: absolute;
+      right: 5%;
+      padding: 0;
+    }
+  }
+
+  .h1{
     margin-bottom: 1rem;
   }
 }
 
-.projects-header-container {
-  @media (min-width: $breakpoint-medium) {
-    float: right;
-    right: 0;
-    width: 40%;
-    position: absolute;
-    right: 5%;
-  }
-}
+
 
 .project {
 	left: 0;
@@ -261,6 +264,12 @@
 
       margin-bottom: 2rem;
     }
+
+    .h1 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
 
     p {
       // font-weight: 400;
