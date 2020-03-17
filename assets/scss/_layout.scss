@@ -210,6 +210,24 @@
 	}
 }
 
+.projects-header {
+  margin-bottom: 16rem;
+
+  h3{
+    margin-bottom: 1rem;
+  }
+}
+
+.projects-header-container {
+  @media (min-width: $breakpoint-medium) {
+    float: right;
+    right: 0;
+    width: 40%;
+    position: absolute;
+    right: 5%;
+  }
+}
+
 .project {
 	left: 0;
 	position: relative;
@@ -225,7 +243,7 @@
 			right: 0;
 			bottom: 0;
 		}
-	}
+  }
 
 	.container {
 		max-width: 100%;
