@@ -12,8 +12,7 @@
 }
 
 .logo {
-	/*float: left;*/
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 	margin: 0;
   line-height: 1;
@@ -23,12 +22,13 @@
   color: $color-silver-wii;
   font-family: $font-default;
   font-weight: 400;
-  margin-left: 3px;
+  display: block;
+  margin-left: 0;
+  margin-top: 8px;
 
-  @media (max-width: $breakpoint-small) {
-    display: block;
-    margin-left: 0;
-    margin-top: 4px;
+  @media (min-width: $breakpoint-small) {
+    display: inline;
+    margin-left: 3px;
 	}
 }
 
@@ -44,46 +44,6 @@
   a {
 		@extend .logo;
 	}
-}
-
-.slogan {
-  margin-bottom: 8px;
-  font-family: $font-poppins;
-}
-
-.status {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: $color-silver-wii;
-
-  @media (max-width: $breakpoint-small) {
-    font-size: 1.2rem;
-	}
-
-  span {
-    &:not(:first-child):before {
-      content: ',';
-      margin-left: -4px;
-    }
-
-    &:last-child:before {
-      content: ' and ';
-      margin-left: 1px;
-    }
-
-    &:last-child:after {
-      content: '.';
-      margin-left: -4px;
-    }
-
-    a {
-      font-weight: 600;
-      // text-decoration: underline;
-      // background-image: linear-gradient( to top, rgba(0, 0, 0, 0) 0%, #dfe6e9 0%, #dfe6e9 15%, rgba(0, 0, 0, 0) 15% );
-    }
-  }
-
-
 }
 
 .content {
@@ -102,20 +62,55 @@
 }
 
 .intro {
-	padding: 0 0 15rem;
+  padding: 0 0 15rem;
+
+  p {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    font-family: $font-poppins;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: 3.2rem;
+      max-width: 80%;
+    }
+  }
+
+  .status {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-silver-wii;
+    margin-bottom: 8px;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: 1.6rem;
+      margin-bottom: 4px;
+    }
+
+    span {
+      &:not(:first-child):before {
+        content: ',';
+        margin-left: -4px;
+      }
+
+      &:last-child:before {
+        content: ' and ';
+        margin-left: 1px;
+      }
+
+      &:last-child:after {
+        content: '.';
+        margin-left: -4px;
+      }
+
+      a {
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 .projects {
 	padding: 0 0 5rem;
-}
-
-.intro {
-	@media (min-width: $breakpoint-medium) {
-		p {
-			font-size: 2.7rem;
-			max-width: 66.66666%;
-		}
-	}
 }
 
 .projects-list {
@@ -254,7 +249,11 @@
 
 	article {
     margin-bottom: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+
+    @media (min-width: $breakpoint-medium) {
+      font-size: 1.8rem;
+    }
 
 
     h1 {
@@ -285,12 +284,12 @@
         border-left: 8px solid $color-silver-olympic;
         padding-left: 2rem;
         font-family: $font-georgia;
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 600;
       }
     }
 
-		@media (min-width: $breakpoint-medium) {
+		@media (min-width: $breakpoint-large) {
 			float: right;
 			right: 0;
 			width: 40%;
@@ -316,7 +315,7 @@
 			@include clearfix;
 		}
 
-		@media (min-width: $breakpoint-medium) {
+		@media (min-width: $breakpoint-large) {
 			float: left;
 			width: 50%;
 		}
@@ -376,13 +375,6 @@
 .project-navigation {
 	background: $color-black;
   padding: 5rem 0;
-
-  .container{
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // justify-content: space-between;
-  }
 
 	a {
 		color: $color-white;
