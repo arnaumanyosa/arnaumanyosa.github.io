@@ -16,18 +16,16 @@
   <main class="content">
     <section class="intro">
       <div class="container">
-        <!-- <h2>About me.</h2> -->
-        <!-- <p>{{ site.greeting }}</p> -->
         <p class="slogan">{{ site.slogan }}</p>
         <div class="status">
-          {{ site.current_status }}
+          Currently working at <a title="{{ site.current_status_name }}" href="{{ site.current_status_url }}" target="_blank" rel="noopener noreferrer">{{ site.current_status_name }}</a>.
         </div>
         <div class="status">
           Previously at
           {% for item in site.previous_status %}
           <span>
-            <a title="{{ item.company_name }}" href="{{ item.company_url }}" target="_blank"
-              rel="noopener noreferrer">{{ item.company_name }}</a>
+            <a title="{{ item.name }}" href="{{ item.url }}" target="_blank"
+              rel="noopener noreferrer">{{ item.name }}</a>
           </span>
           {% endfor %}
         </div>
