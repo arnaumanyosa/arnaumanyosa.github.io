@@ -1,20 +1,20 @@
 .container {
-	display: block;
-	margin: 0 auto;
-	max-width: 70em;
-	padding: 0 3rem;
-	@include clearfix;
+  display: block;
+  margin: 0 auto;
+  max-width: 70em;
+  padding: 0 3rem;
+  @include clearfix;
 }
 
 .header {
-	background: $color-white;
-	padding: 3rem 0;
+  background: $color-white;
+  padding: 3rem 0;
 }
 
 .logo {
-	font-size: 1.4rem;
-	font-weight: 600;
-	margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
   line-height: 1;
 }
 
@@ -29,49 +29,49 @@
   @media (min-width: $breakpoint-small) {
     display: inline;
     margin-left: 3px;
-	}
+  }
 }
 
 .nav {
-	float: right;
+  float: right;
 
-	a {
-		@extend .logo;
-	}
+  a {
+    @extend .logo;
+  }
 }
 
 .go-back-nav {
   a {
-		@extend .logo;
-	}
+    @extend .logo;
+  }
 }
 
 .content {
-	background: $color-white;
-	padding: 7rem 0 0;
-	margin-bottom: 39.24rem;
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 1;
+  background: $color-white;
+  padding: 7rem 0 0;
+  margin-bottom: 39.24rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-	@media (min-width: $breakpoint-medium) {
-		// padding: 21rem 0 0;
-		margin-bottom: 29.42rem;
-	}
+  @media (min-width: $breakpoint-medium) {
+    // padding: 21rem 0 0;
+    margin-bottom: 29.42rem;
+  }
 }
 
 .intro {
-  padding: 0 0 15rem;
+  padding: 0 0 12rem;
 
   p {
     font-size: 2.4rem;
-    margin-bottom: 8px;
+    margin-bottom: 2rem;
     font-family: $font-poppins;
 
     @media (min-width: $breakpoint-medium) {
       font-size: 3.2rem;
-      max-width: 80%;
+      // max-width: 80%;
     }
   }
 
@@ -88,17 +88,17 @@
 
     span {
       &:not(:first-child):before {
-        content: ',';
+        content: ",";
         margin-left: -4px;
       }
 
       &:last-child:before {
-        content: ' and ';
+        content: " and ";
         margin-left: 1px;
       }
 
       &:last-child:after {
-        content: '.';
+        content: ".";
         margin-left: -4px;
       }
 
@@ -110,99 +110,99 @@
 }
 
 .projects {
-	padding: 0 0 5rem;
+  padding: 0 0 5rem;
 }
 
 .projects-list {
-	@media (min-width: $breakpoint-small) {
-		margin-left: -1.5rem;
-		margin-right: -1.5rem;
-		@include clearfix;
+  @media (min-width: $breakpoint-small) {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    @include clearfix;
 
-		li {
-			float: left;
-			width: 50%;
-		}
+    li {
+      float: left;
+      width: 50%;
+    }
 
-		a {
-			padding: 0 1.5rem;
-		}
-	}
+    a {
+      padding: 0 1.5rem;
+    }
+  }
 
-	@media (min-width: $breakpoint-medium) {
-		li {
-			width: 33.33333%;
-		}
-	}
+  @media (min-width: $breakpoint-medium) {
+    li {
+      width: 33.33333%;
+    }
+  }
 
-	li {
-		margin-bottom: 3rem;
+  li {
+    margin-bottom: 3rem;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-	a {
+  a {
     display: block;
     background-image: none;
 
-		&:hover {
-			.img-wrapper {
-				&:before {
-					opacity: 1;
-				}
-				&:after {
-					opacity: .45;
-				}
-			}
-		}
-	}
+    &:hover {
+      .img-wrapper {
+        &:before {
+          opacity: 1;
+        }
+        &:after {
+          opacity: 0.45;
+        }
+      }
+    }
+  }
 
-	.img-wrapper {
-		position: relative;
+  .img-wrapper {
+    position: relative;
 
-		&:before {
-			content: "Learn More";
-			color: $color-white;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-top: -.5rem;
-			margin-left: -4.4rem;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
-		}
+    &:before {
+      content: "Learn More";
+      color: $color-white;
+      @extend .h2;
+      font-weight: 800;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -0.5rem;
+      margin-left: -4.4rem;
+      opacity: 0;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition-delay: 0.25s;
+      transition-delay: 0.25s;
+      z-index: 2;
+    }
 
-		&:after {
-			background: #000;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
-		}
-	}
+    &:after {
+      background: #000;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      z-index: 1;
+    }
+  }
 
-	img {
+  img {
     width: 100%;
-	}
+  }
 
-	span {
-		margin: 1rem 0 .5rem;
-	}
+  span {
+    margin: 1rem 0 0.5rem;
+  }
 }
 
 .projects-header {
@@ -219,42 +219,39 @@
     }
   }
 
-  .h1{
+  .h1 {
     margin-bottom: 1rem;
   }
 }
 
-
-
 .project {
-	left: 0;
-	position: relative;
-	top: 0;
+  left: 0;
+  position: relative;
+  top: 0;
 
-	@media (min-width: $breakpoint-medium) {
-		// margin-top: -21rem;
+  @media (min-width: $breakpoint-medium) {
+    // margin-top: -21rem;
 
-		.article-wrapper {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
+    .article-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 
-	.container {
-		max-width: 100%;
+  .container {
+    max-width: 100%;
   }
 
-	article {
+  article {
     margin-bottom: 3rem;
     font-size: 1.6rem;
 
     @media (min-width: $breakpoint-medium) {
       font-size: 1.8rem;
     }
-
 
     h1 {
       @media (min-width: $breakpoint-medium) {
@@ -268,7 +265,6 @@
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
-
 
     p {
       // font-weight: 400;
@@ -289,12 +285,12 @@
       }
     }
 
-		@media (min-width: $breakpoint-large) {
-			float: right;
-			right: 0;
-			width: 40%;
-			position: absolute;
-			right: 5%;
+    @media (min-width: $breakpoint-large) {
+      float: right;
+      right: 0;
+      width: 40%;
+      position: absolute;
+      right: 5%;
     }
 
     ul {
@@ -305,48 +301,48 @@
         margin: -4rem 0 6rem;
       }
     }
-	}
+  }
 
-	aside {
-		margin-left: -3rem;
-		margin-right: -3rem;
+  aside {
+    margin-left: -3rem;
+    margin-right: -3rem;
 
-		@media (min-width: $breakpoint-small) {
-			@include clearfix;
-		}
+    @media (min-width: $breakpoint-small) {
+      @include clearfix;
+    }
 
-		@media (min-width: $breakpoint-large) {
-			float: left;
-			width: 50%;
-		}
-	}
+    @media (min-width: $breakpoint-large) {
+      float: left;
+      width: 50%;
+    }
+  }
 
-	.project-meta {
-		margin: 5rem 0 0;
+  .project-meta {
+    margin: 5rem 0 0;
 
-		@media (min-width: $breakpoint-medium) {
-			margin: 10rem 0 0;
-			max-width: 70%;
-		}
-	}
+    @media (min-width: $breakpoint-medium) {
+      margin: 10rem 0 0;
+      max-width: 70%;
+    }
+  }
 
-	h1 {
-		a {
-			text-decoration: underline;
-		}
+  h1 {
+    a {
+      text-decoration: underline;
+    }
   }
 
   .h2 {
-		margin: 3rem 0 1rem;
+    margin: 3rem 0 1rem;
 
-		&:first-of-type {
-			margin-top: 0;
-		}
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 
   .column-container {
     @media (min-width: $breakpoint-xlarge) {
-			display: flex;
+      display: flex;
       flex-direction: row;
     }
     margin-bottom: 6rem;
@@ -354,167 +350,167 @@
 
   .column {
     @media (min-width: $breakpoint-xlarge) {
-			flex-basis: 50%;
+      flex-basis: 50%;
       margin-right: 2rem;
-		}
+    }
   }
 
-	li {
-		margin-bottom: 2rem;
+  li {
+    margin-bottom: 2rem;
 
-		// &:last-child {
-		// 	margin-bottom: 0;
-		// }
-	}
+    // &:last-child {
+    // 	margin-bottom: 0;
+    // }
+  }
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 }
 
 .project-navigation {
-	background: $color-black;
+  background: $color-black;
   padding: 5rem 0;
 
-	a {
-		color: $color-white;
-		display: inline-block;
+  a {
+    color: $color-white;
+    display: inline-block;
 
-		&:hover {
+    &:hover {
       background-image: none;
-			h2:after {
-				visibility: visible;
-				// -webkit-transform: scaleX(1);
-				// transform: scaleX(1);
-			}
+      h2:after {
+        visibility: visible;
+        // -webkit-transform: scaleX(1);
+        // transform: scaleX(1);
+      }
 
-			&.prev {
-				span {
-					left: 7px;
-				}
-			}
+      &.prev {
+        span {
+          left: 7px;
+        }
+      }
 
-			span {
-				&:after {
-					left: 7px;
-				}
+      span {
+        &:after {
+          left: 7px;
+        }
 
-				&:before {
-					left: -7px;
-				}
-			}
-		}
+        &:before {
+          left: -7px;
+        }
+      }
+    }
 
-		&:nth-of-type(1),
-		&:nth-of-type(2) {
-			display: table;
-			margin: 0 auto;
-			text-align: center;
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      display: table;
+      margin: 0 auto;
+      text-align: center;
 
-			@media (min-width: $breakpoint-xsmall) {
-				display: inline-block;
-				margin: 0;
-				text-align: left;
-			}
+      @media (min-width: $breakpoint-xsmall) {
+        display: inline-block;
+        margin: 0;
+        text-align: left;
+      }
     }
 
     &:last-of-type {
       @media (min-width: $breakpoint-xsmall) {
-				float: right;
-			}
+        float: right;
+      }
     }
 
-		&:nth-of-type(1) {
-			@media (min-width: $breakpoint-xsmall) {
-				float: left;
-			}
+    &:nth-of-type(1) {
+      @media (min-width: $breakpoint-xsmall) {
+        float: left;
+      }
     }
 
     &:last-of-type {
       @media (min-width: $breakpoint-xsmall) {
-				float: right;
-			}
+        float: right;
+      }
     }
 
-		&:nth-of-type(2) {
-			margin-top: 3rem;
+    &:nth-of-type(2) {
+      margin-top: 3rem;
 
-			@media (min-width: $breakpoint-xsmall) {
-				float: right;
+      @media (min-width: $breakpoint-xsmall) {
+        float: right;
         margin-top: 0;
         text-align: right;
-			}
-		}
+      }
+    }
 
-		&.next {
+    &.next {
       // justify-content: flex-end;
       * {
         color: $color-white;
       }
-			span {
-				&:after {
-					content: "\02192";
-				}
-			}
-		}
+      span {
+        &:after {
+          content: "\02192";
+        }
+      }
+    }
 
-		&.prev {
+    &.prev {
       * {
         color: $color-white;
       }
-			span {
-				position: relative;
-				left: 0;
-				-webkit-transition: all .3s ease-in-out 0s;
-				transition: all .3s ease-in-out 0s;
+      span {
+        position: relative;
+        left: 0;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
 
-				&:before {
-					content: "\02190";
-				}
-			}
-		}
-	}
+        &:before {
+          content: "\02190";
+        }
+      }
+    }
+  }
 
-	span {
-		&:after,
-		&:before {
-			position: relative;
-			left: 0;
-			-webkit-transition: all .3s ease-in-out 0s;
-			transition: all .3s ease-in-out 0s;
-		}
-	}
+  span {
+    &:after,
+    &:before {
+      position: relative;
+      left: 0;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
 
-	h2 {
-		display: inline-block;
-		font-size: 1.8rem;
+  h2 {
+    display: inline-block;
+    font-size: 1.8rem;
     position: relative;
 
-		&:after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 1px;
-			bottom: -4px;
-			left: 0;
-			background-color: $color-white;
-			visibility: hidden;
-			-webkit-transform: scaleX(0);
-			transform: scaleX(0);
-			-webkit-transition: all .3s ease-in-out 0s;
-			transition: all .3s ease-in-out 0s;
-		}
-	}
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -4px;
+      left: 0;
+      background-color: $color-white;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
 }
 
 .footer {
-	background: $color-alabaster;
-	bottom: 0;
-	left: 0;
-	padding: 5rem 0;
-	position: fixed;
-	right: 0;
-	z-index: -1;
+  background: $color-alabaster;
+  bottom: 0;
+  left: 0;
+  padding: 5rem 0;
+  position: fixed;
+  right: 0;
+  z-index: -1;
 }
 
 .cv {
@@ -523,14 +519,14 @@
 
 .contact,
 .follow {
-	@media (min-width: $breakpoint-medium) {
-		float: left;
-		margin-bottom: 0;
+  @media (min-width: $breakpoint-medium) {
+    float: left;
+    margin-bottom: 0;
     width: 50%;
-	}
+  }
 }
 
 .contact,
 .follow {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
