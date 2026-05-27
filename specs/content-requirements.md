@@ -14,11 +14,11 @@ The personal information and about section should be in a separate markdown file
 
 **Frontmatter data:**
 
-- complete_name: [Full name]
+- completeName: [Full name]
 - role: [Professional role]
 - email: [Email address]
 - location: [Location]
-- social_links:
+- socialLinks:
   - linkedin: [LinkedIn URL]
   - github: [GitHub URL]
   - dribbble: [Dribbble URL]

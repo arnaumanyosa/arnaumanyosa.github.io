@@ -27,7 +27,7 @@ npm run astro check  # type check
 
 ## Content Schema
 
-**`src/content/about.md`** frontmatter: `complete_name`, `role`, `email`, `location`, `social_links` (linkedin, github, dribbble).
+**`src/content/about.md`** frontmatter: `completeName`, `role`, `email`, `location`, `socialLinks` (linkedin, github, dribbble).
 
 **`src/content/projects/*.md`** frontmatter: `title`, `subtitle`, `thumbnail`, `liveUrl`, `techstack[]`, `period.start/end`, `roles[]`, `overview`, `outcomes[]` (title + description). Body follows CAR structure (Challenge, Actions, Results).
 
@@ -38,6 +38,7 @@ Placeholder content only — use Unsplash images where needed.
 Minimalistic typography-focused design. Use the `frontend-design` skill when building UI.
 
 **Colors:**
+
 - Body text: `#323232`
 - Headings: `#1a1a1a`
 - Subtitle: `#4d4d4d`

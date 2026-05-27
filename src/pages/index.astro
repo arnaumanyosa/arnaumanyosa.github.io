@@ -10,9 +10,13 @@ const about = await getEntry('about', 'about');
 if (!about) throw new Error('about.md not found');
 ---
 
-<BaseLayout title={`${about.data.complete_name} — ${about.data.role}`}>
-  <Hero name={about.data.complete_name} role={about.data.role} />
+<BaseLayout
+  title={`${about.data.completeName} — ${about.data.role}`}
+  personName={about.data.completeName}
+  personRole={about.data.role}
+>
+  <Hero slogan={about.data.heroSlogan} />
   <Projects />
   <About about={about} />
-  <Contact email={about.data.email} socialLinks={about.data.social_links} />
+  <Contact email={about.data.email} socialLinks={about.data.socialLinks} />
 </BaseLayout>

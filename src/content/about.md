@@ -1,12 +1,13 @@
 ---
-complete_name: "Alex Rivera"
-role: "Senior Product Engineer"
-email: "alex@alexrivera.dev"
-location: "Barcelona, Spain"
-social_links:
-  linkedin: "https://linkedin.com/in/alexrivera"
-  github: "https://github.com/alexrivera"
-  dribbble: "https://dribbble.com/alexrivera"
+completeName: 'Alex Rivera'
+role: 'Senior Product Engineer'
+email: 'alex@alexrivera.dev'
+location: 'Barcelona, Spain'
+heroSlogan: 'I stopped a broken burger menu trend from costing Next £135m. I traced a 51% suit return rate back to a single navigation gap and fixed it. I cut abandonment by 12 percentage points on the highest-friction screen in By Miles onboarding. Lead UX Researcher & Strategist with 20+ years of finding what the data alone can not explain.'
+socialLinks:
+  linkedin: 'https://linkedin.com/in/alexrivera'
+  github: 'https://github.com/alexrivera'
+  dribbble: 'https://dribbble.com/alexrivera'
 ---
 
 I'm a Senior Product Engineer with over eight years of experience building digital products at the intersection of design and engineering. I care deeply about crafting interfaces that are both beautiful and accessible — systems that feel effortless to use and are a pleasure to maintain.

@@ -1,0 +1,32 @@
+---
+interface Props {
+  personName?: string;
+  personRole?: string;
+}
+
+const { personName, personRole } = Astro.props;
+---
+
+<header
+  class="fixed top-0 left-0 right-0 z-50 bg-white"
+>
+  <div class="max-w-5xl mx-auto p-6">
+    {
+      personName && (
+        <div
+          id="header-reveal"
+          class="flex flex-col gap-2"
+        >
+          <div class="font-heading font-semibold text-heading text-sm leading-none">
+            {personName}
+          </div>
+          <div class="font-heading text-subtle text-xs tracking-widest leading-none">
+            {personRole}
+          </div>
+        </div>
+      )
+    }
+  </div>
+</header>
+
+

@@ -1,14 +1,17 @@
 ---
-import Nav from '../components/Nav.astro';
+import Header from '../components/Header.astro';
 import DotNav from '../components/DotNav.astro';
 import '../styles/global.css';
 
 interface Props {
   title: string;
   description?: string;
+  personName?: string;
+  personRole?: string;
 }
 
-const { title, description = 'Senior Product Engineer portfolio' } = Astro.props;
+const { title, description = 'Senior Product Engineer portfolio', personName, personRole } =
+  Astro.props;
 ---
 
 <!doctype html>
@@ -36,7 +39,7 @@ const { title, description = 'Senior Product Engineer portfolio' } = Astro.props
     >
       Skip to content
     </a>
-    <Nav />
+    <Header personName={personName} personRole={personRole} />
     <DotNav />
     <main id="main">
       <slot />

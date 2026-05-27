@@ -8,13 +8,13 @@ interface Props {
 }
 
 const { about } = Astro.props;
-const { complete_name, role, email, location, social_links } = about.data;
+const { completeName, role, email, location, socialLinks } = about.data;
 const { Content } = await render(about);
 ---
 
 <section id="about" class="py-24 px-6 bg-gray-50/50">
   <div class="max-w-5xl mx-auto">
-    <h2 class="font-heading font-semibold text-heading text-3xl mb-12">
+    <h2 class="font-heading font-semibold text-heading text-3xl mb-8">
       About
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -26,7 +26,7 @@ const { Content } = await render(about);
           <p class="text-xs text-subtle font-body tracking-widest uppercase mb-1">
             Name
           </p>
-          <p class="text-body text-sm">{complete_name}</p>
+          <p class="text-body text-sm">{completeName}</p>
         </div>
         <div>
           <p class="text-xs text-subtle font-body tracking-widest uppercase mb-1">
@@ -57,17 +57,17 @@ const { Content } = await render(about);
           </p>
           <div class="flex items-center gap-4">
             <SocialIcon
-              href={social_links.linkedin}
+              href={socialLinks.linkedin}
               platform="linkedin"
               label="LinkedIn profile"
             />
             <SocialIcon
-              href={social_links.github}
+              href={socialLinks.github}
               platform="github"
               label="GitHub profile"
             />
             <SocialIcon
-              href={social_links.dribbble}
+              href={socialLinks.dribbble}
               platform="dribbble"
               label="Dribbble profile"
             />

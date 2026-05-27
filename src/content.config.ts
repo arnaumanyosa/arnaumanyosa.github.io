@@ -5,11 +5,12 @@ import { glob } from 'astro/loaders';
 const about = defineCollection({
   loader: glob({ pattern: 'about.md', base: './src/content' }),
   schema: z.object({
-    complete_name: z.string(),
+    completeName: z.string(),
     role: z.string(),
     email: z.email(),
     location: z.string(),
-    social_links: z.object({
+    heroSlogan: z.string(),
+    socialLinks: z.object({
       linkedin: z.url(),
       github: z.url(),
       dribbble: z.url(),
