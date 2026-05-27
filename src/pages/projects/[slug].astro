@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectHero from '../../components/project-detail/ProjectHero.astro';
+import ProjectMeta from '../../components/project-detail/ProjectMeta.astro';
+import ProjectBody from '../../components/project-detail/ProjectBody.astro';
+import OutcomeCard from '../../components/project-detail/OutcomeCard.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { title, subtitle, thumbnail, techstack, period, roles, liveUrl, overview, outcomes } =
+  project.data;
+
+const { Content } = await render(project);
+---
+
+<BaseLayout title={`${title} — Portfolio`} description={overview}>
+  <article class="py-16 px-6 max-w-4xl mx-auto">
+    <ProjectHero
+      title={title}
+      subtitle={subtitle}
+      thumbnail={thumbnail}
+      period={period}
+      roles={roles}
+      liveUrl={liveUrl}
+    />
+    <ProjectMeta techstack={techstack} roles={roles} overview={overview} />
+    <ProjectBody>
+      <Content />
+    </ProjectBody>
+    {
+      outcomes.length > 0 && (
+        <div class="mt-16">
+          <h2 class="font-heading font-semibold text-heading text-2xl mb-6">
+            Results
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {outcomes.map((outcome) => (
+              <OutcomeCard title={outcome.title} description={outcome.description} />
+            ))}
+          </div>
+        </div>
+      )
+    }
+  </article>
+</BaseLayout>

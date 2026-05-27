@@ -1,0 +1,18 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Projects from '../components/Projects.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+
+const about = await getEntry('about', 'about');
+if (!about) throw new Error('about.md not found');
+---
+
+<BaseLayout title={`${about.data.complete_name} — ${about.data.role}`}>
+  <Hero name={about.data.complete_name} role={about.data.role} />
+  <Projects />
+  <About about={about} />
+  <Contact email={about.data.email} socialLinks={about.data.social_links} />
+</BaseLayout>

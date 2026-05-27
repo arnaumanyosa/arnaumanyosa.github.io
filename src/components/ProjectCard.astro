@@ -1,0 +1,59 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import TechTag from './TechTag.astro';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+  eager?: boolean;
+}
+
+const { project, eager = false } = Astro.props;
+const { title, subtitle, thumbnail, techstack, period } = project.data;
+const displayTags = techstack.slice(0, 3);
+const extraCount = techstack.length - displayTags.length;
+
+function formatPeriod(start: string, end?: string) {
+  const fmt = (d: string) => {
+    const [year, month] = d.split('-');
+    return month
+      ? new Date(Number(year), Number(month) - 1).toLocaleDateString('en-US', {
+          month: 'short',
+          year: 'numeric',
+        })
+      : year;
+  };
+  return `${fmt(start)} – ${end ? fmt(end) : 'Present'}`;
+}
+---
+
+<a
+  href={`/projects/${project.id}`}
+  class="group block border border-border/30 rounded overflow-hidden hover:border-border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border"
+>
+  <div class="aspect-[16/9] overflow-hidden bg-gray-50">
+    <img
+      src={thumbnail}
+      alt={title}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+  </div>
+  <div class="p-6">
+    <p class="text-xs text-subtle font-body mb-2">
+      {formatPeriod(period.start, period.end)}
+    </p>
+    <h3 class="font-heading font-semibold text-heading text-lg mb-1">
+      {title}
+    </h3>
+    <p class="text-subtle text-sm leading-relaxed mb-4">{subtitle}</p>
+    <div class="flex flex-wrap gap-2 items-center">
+      {displayTags.map((tag) => <TechTag label={tag} />)}
+      {
+        extraCount > 0 && (
+          <span class="text-xs text-subtle font-body">+{extraCount} more</span>
+        )
+      }
+    </div>
+  </div>
+</a>

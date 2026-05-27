@@ -1,0 +1,45 @@
+---
+interface Props {
+  name: string;
+  role: string;
+}
+
+const { name, role } = Astro.props;
+---
+
+<section class="min-h-svh flex flex-col justify-center px-6 max-w-5xl mx-auto">
+  <div class="max-w-2xl">
+    <p class="text-subtle text-sm font-body tracking-widest uppercase mb-4">
+      {role}
+    </p>
+    <h1
+      class="font-heading font-semibold text-heading text-5xl sm:text-6xl lg:text-7xl leading-tight mb-8"
+    >
+      {name}
+    </h1>
+    <p class="text-body text-lg leading-relaxed mb-10 max-w-lg">
+      Building products at the intersection of design and engineering. Focused
+      on clarity, craft, and code that lasts.
+    </p>
+    <a
+      href="#projects"
+      class="inline-flex items-center gap-2 border border-heading text-heading font-heading font-medium text-sm px-6 py-3 hover:bg-heading hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
+    >
+      View work
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 5v14M5 12l7 7 7-7"></path>
+      </svg>
+    </a>
+  </div>
+</section>

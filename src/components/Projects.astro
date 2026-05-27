@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import ProjectCard from './ProjectCard.astro';
+
+const allProjects = await getCollection('projects');
+const projects = allProjects.sort(
+  (a, b) => new Date(b.data.period.start).getTime() - new Date(a.data.period.start).getTime()
+);
+---
+
+<section id="projects" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="font-heading font-semibold text-heading text-3xl mb-3">
+      Selected work
+    </h2>
+    <p class="text-subtle text-base mb-12 max-w-md">
+      A few projects that shaped how I think about building products.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {
+        projects.map((project, index) => (
+          <ProjectCard project={project} eager={index === 0} />
+        ))
+      }
+    </div>
+  </div>
+</section>

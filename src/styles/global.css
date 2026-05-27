@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --color-heading: #1a1a1a;
+  --color-body: #323232;
+  --color-subtle: #4d4d4d;
+  --color-hover: #666666;
+  --color-border: #808080;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    color: var(--color-body);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-heading);
+  }
+}

@@ -1,0 +1,70 @@
+---
+import SocialIcon from './SocialIcon.astro';
+
+interface Props {
+  email: string;
+  socialLinks: {
+    linkedin: string;
+    github: string;
+    dribbble: string;
+  };
+}
+
+const { email, socialLinks } = Astro.props;
+---
+
+<section id="contact" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="max-w-lg">
+      <h2 class="font-heading font-semibold text-heading text-3xl mb-4">
+        Get in touch
+      </h2>
+      <p class="text-subtle text-base leading-relaxed mb-8">
+        Open to new opportunities, interesting projects, and thoughtful
+        conversations about product and engineering.
+      </p>
+      <div class="flex items-center gap-6 flex-wrap">
+        <a
+          href={`mailto:${email}`}
+          class="inline-flex items-center gap-2 border border-heading text-heading font-heading font-medium text-sm px-6 py-3 hover:bg-heading hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Send an email
+        </a>
+        <div class="flex items-center gap-5">
+          <SocialIcon
+            href={socialLinks.linkedin}
+            platform="linkedin"
+            label="LinkedIn profile"
+          />
+          <SocialIcon
+            href={socialLinks.github}
+            platform="github"
+            label="GitHub profile"
+          />
+          <SocialIcon
+            href={socialLinks.dribbble}
+            platform="dribbble"
+            label="Dribbble profile"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
