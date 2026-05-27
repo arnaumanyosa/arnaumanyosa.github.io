@@ -1,35 +1,13 @@
 ---
-const navLinks = [
-  { href: '#projects', label: 'Projects' },
-  { href: '#about', label: 'About' },
-  { href: '#contact', label: 'Contact' },
-];
 ---
 
-<header class="sticky top-0 z-50 bg-white border-b border-border/30">
-  <nav
-    class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
-    aria-label="Main navigation"
-  >
+<header class="fixed top-0 left-0 right-0 z-50 pointer-events-none">
+  <div class="max-w-5xl mx-auto px-6 py-4">
     <a
-      href="/"
-      class="font-heading font-semibold text-heading text-sm tracking-wide hover:text-hover transition-colors"
+      href="/#hero"
+      class="pointer-events-auto font-heading font-semibold text-heading text-sm tracking-wide hover:text-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
     >
       Portfolio
     </a>
-    <ul class="flex items-center gap-8" role="list">
-      {
-        navLinks.map(({ href, label }) => (
-          <li>
-            <a
-              href={href}
-              class="text-sm text-subtle hover:text-heading transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
-            >
-              {label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
+  </div>
 </header>

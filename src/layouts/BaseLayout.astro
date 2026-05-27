@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/Nav.astro';
+import DotNav from '../components/DotNav.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -36,6 +37,7 @@ const { title, description = 'Senior Product Engineer portfolio' } = Astro.props
       Skip to content
     </a>
     <Nav />
+    <DotNav />
     <main id="main">
       <slot />
     </main>

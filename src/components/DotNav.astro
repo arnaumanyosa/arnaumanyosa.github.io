@@ -1,0 +1,84 @@
+---
+const sections = [
+  { id: 'hero', label: 'Home' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'about', label: 'About' },
+  { id: 'contact', label: 'Contact' },
+];
+---
+
+<nav
+  class="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-5"
+  aria-label="Page sections"
+>
+  {
+    sections.map(({ id, label }) => (
+      <a
+        href={`#${id}`}
+        data-dot={id}
+        aria-label={label}
+        class="dot-link relative flex items-center justify-end gap-3 group outline-none"
+      >
+        <span class="dot-label text-xs font-body text-subtle opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-150 select-none whitespace-nowrap">
+          {label}
+        </span>
+        <span
+          class="dot block w-2.5 h-2.5 rounded-full border border-border bg-white transition-all duration-200 group-hover:bg-hover group-hover:border-hover group-focus-visible:ring-2 group-focus-visible:ring-border"
+          aria-hidden="true"
+        />
+      </a>
+    ))
+  }
+</nav>
+
+<script>
+  const dots = document.querySelectorAll<HTMLAnchorElement>('[data-dot]');
+
+  function setActive(id: string) {
+    dots.forEach((dot) => {
+      const circle = dot.querySelector('.dot');
+      if (!circle) return;
+      if (dot.dataset.dot === id) {
+        circle.classList.add('bg-heading', '!border-heading', 'scale-110');
+        circle.classList.remove('bg-white', 'border-border');
+      } else {
+        circle.classList.remove('bg-heading', '!border-heading', 'scale-110');
+        circle.classList.add('bg-white', 'border-border');
+      }
+    });
+  }
+
+  const sectionIds = ['hero', 'projects', 'about', 'contact'];
+  const THRESHOLD = 0.6;
+
+  function updateActive() {
+    const cutoff = window.innerHeight * THRESHOLD;
+    let active = sectionIds[0];
+    for (const id of sectionIds) {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= cutoff) active = id;
+    }
+    // When scrolled to the bottom of the page, always activate the last section
+    const atBottom =
+      window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50;
+    if (atBottom) active = sectionIds[sectionIds.length - 1];
+    setActive(active);
+  }
+
+  let ticking = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateActive();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+
+  updateActive();
+</script>
