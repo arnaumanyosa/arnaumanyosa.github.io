@@ -8,10 +8,16 @@ interface Props {
   description?: string;
   personName?: string;
   personRole?: string;
+  isProjectDetails?: boolean;
 }
 
-const { title, description = 'Senior Product Engineer portfolio', personName, personRole } =
-  Astro.props;
+const {
+  title,
+  description = 'Senior Product Engineer portfolio',
+  personName,
+  personRole,
+  isProjectDetails = false,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -39,8 +45,8 @@ const { title, description = 'Senior Product Engineer portfolio', personName, pe
     >
       Skip to content
     </a>
-    <Header personName={personName} personRole={personRole} />
-    <DotNav />
+    {!isProjectDetails && <Header personName={personName} personRole={personRole} />}
+    {!isProjectDetails && <DotNav />}
     <main id="main">
       <slot />
     </main>
