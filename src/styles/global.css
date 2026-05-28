@@ -3,15 +3,14 @@
 @theme {
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'DM Sans', sans-serif;
+}
 
-  --color-heading: #1a1a1a;
-  --color-body: #323232;
-  --color-subtle: #666666;
-  /* --color-subtle: #4d4d4d; */
-  --color-hover: #808080;
-  /* --color-hover: #666666; */
-  --color-border: #aaaaaa;
-  /* --color-border: #808080; */
+@theme inline {
+  --color-heading: var(--color-gray-900);
+  --color-body: var(--color-gray-800);
+  --color-subtle: var(--color-gray-400);
+  --color-hover: var(--color-gray-300);
+  --color-border: var(--color-gray-200);
 }
 
 @layer base {
