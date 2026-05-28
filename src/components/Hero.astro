@@ -4,10 +4,9 @@ interface Props {
 }
 
 const { slogan } = Astro.props;
+const sentences = slogan.split('.').filter(sentence => sentence.trim().length > 0);
 ---
 
 <section id="hero" class="min-h-svh flex flex-col justify-center max-w-5xl mx-auto">
-  <p class="text-3xl leading-relaxed">
-    {slogan}
-  </p>
+  {sentences.map(sentence => <p class="text-3xl leading-relaxed mb-1">{sentence}.</p>)}
 </section>
