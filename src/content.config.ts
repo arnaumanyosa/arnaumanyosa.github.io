@@ -10,6 +10,7 @@ const about = defineCollection({
     email: z.email(),
     location: z.string(),
     heroSlogan: z.string(),
+    facts: z.array(z.object({ label: z.string(), value: z.string() })),
     socialLinks: z.object({
       linkedin: z.url(),
       github: z.url(),

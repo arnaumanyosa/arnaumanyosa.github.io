@@ -1,14 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { render } from 'astro:content';
-import SocialIcon from './SocialIcon.astro';
-
 interface Props {
   about: CollectionEntry<'about'>;
 }
 
 const { about } = Astro.props;
-const { completeName, role, email, location, socialLinks } = about.data;
+const { facts } = about.data;
 const { Content } = await render(about);
 ---
 
@@ -17,62 +15,19 @@ const { Content } = await render(about);
     <h2 class="font-heading font-semibold text-heading text-3xl mb-8">
       About
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
       <div class="md:col-span-2 space-y-4 text-body leading-relaxed">
         <Content />
       </div>
-      <div class="space-y-6">
-        <div>
-          <p class="text-xs text-subtle font-body tracking-widest uppercase mb-1">
-            Name
-          </p>
-          <p class="text-body text-sm">{completeName}</p>
-        </div>
-        <div>
-          <p class="text-xs text-subtle font-body tracking-widest uppercase mb-1">
-            Role
-          </p>
-          <p class="text-body text-sm">{role}</p>
-        </div>
-        <div>
-          <p class="text-xs text-subtle font-body tracking-widest uppercase mb-1">
-            Location
-          </p>
-          <p class="text-body text-sm">{location}</p>
-        </div>
-        <div>
-          <p class="text-xs text-subtle font-body tracking-widest uppercase mb-1">
-            Contact
-          </p>
-          <a
-            href={`mailto:${email}`}
-            class="text-body text-sm hover:text-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
-          >
-            {email}
-          </a>
-        </div>
-        <div>
-          <p class="text-xs text-subtle font-body tracking-widest uppercase mb-2">
-            Find me
-          </p>
-          <div class="flex items-center gap-4">
-            <SocialIcon
-              href={socialLinks.linkedin}
-              platform="linkedin"
-              label="LinkedIn profile"
-            />
-            <SocialIcon
-              href={socialLinks.github}
-              platform="github"
-              label="GitHub profile"
-            />
-            <SocialIcon
-              href={socialLinks.dribbble}
-              platform="dribbble"
-              label="Dribbble profile"
-            />
-          </div>
-        </div>
+      <div class="space-y-8">
+        {
+          facts.map(({ label, value }) => (
+            <div>
+              <p class="font-heading font-bold text-heading text-4xl mb-1">{value}</p>
+              <p class="text-xs text-subtle font-body tracking-widest uppercase">{label}</p>
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>
