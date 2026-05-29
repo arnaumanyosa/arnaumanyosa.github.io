@@ -1,4 +1,6 @@
 ---
+import Button from '../Button.astro';
+
 interface Props {
   title: string;
   subtitle: string;
@@ -60,12 +62,7 @@ function formatPeriod(start: string, end?: string) {
 
   {
     liveUrl && (
-      <a
-        href={liveUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 text-sm font-body text-subtle border border-border/60 px-4 py-2 rounded hover:border-border hover:text-heading transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border"
-      >
+      <Button href={liveUrl} target="_blank" rel="noopener noreferrer">
         View live
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +80,7 @@ function formatPeriod(start: string, end?: string) {
           <polyline points="15 3 21 3 21 9" />
           <line x1="10" y1="14" x2="21" y2="3" />
         </svg>
-      </a>
+      </Button>
     )
   }
 </div>

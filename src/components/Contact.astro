@@ -1,5 +1,6 @@
 ---
 import SocialIcon from './SocialIcon.astro';
+import Button from './Button.astro';
 
 interface Props {
   email: string;
@@ -24,10 +25,7 @@ const { email, socialLinks } = Astro.props;
         conversations about product and engineering.
       </p>
       <div class="flex items-center gap-6 flex-wrap">
-        <a
-          href={`mailto:${email}`}
-          class="inline-flex items-center gap-2 border border-heading text-heading font-heading font-medium text-sm px-6 py-3 hover:bg-heading hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
-        >
+        <Button href={`mailto:${email}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="15"
@@ -46,7 +44,7 @@ const { email, socialLinks } = Astro.props;
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
           Send an email
-        </a>
+        </Button>
         <div class="flex items-center gap-5">
           <SocialIcon
             href={socialLinks.linkedin}

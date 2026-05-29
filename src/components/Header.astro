@@ -1,4 +1,6 @@
 ---
+import Button from './Button.astro';
+
 interface Props {
   personName?: string;
   personRole?: string;
@@ -10,7 +12,7 @@ const { personName, personRole } = Astro.props;
 <header
   class="fixed top-0 left-0 right-0 z-50 bg-white"
 >
-  <div class="max-w-5xl mx-auto py-6">
+  <div class="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
     {
       personName && (
         <div
@@ -26,6 +28,7 @@ const { personName, personRole } = Astro.props;
         </div>
       )
     }
+    <Button href="/cv.pdf" download>Download CV</Button>
   </div>
 </header>
 
