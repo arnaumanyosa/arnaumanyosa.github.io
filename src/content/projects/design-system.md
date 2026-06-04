@@ -5,8 +5,8 @@ thumbnail: '../../assets/projects/two/photo-1618005182384-a83a8bd57fbe.jpg'
 liveUrl: 'https://storybook.example.com'
 techstack: ['React', 'TypeScript', 'Storybook', 'Figma', 'CSS Modules']
 period:
-  start: '2023-01'
-  end: '2023-09'
+  start: '2020-01'
+  end: '2020-09'
 roles: ['Technical Lead', 'Design Systems Engineer']
 overview: 'Led the creation of a shared component library to eliminate UI inconsistency across four product teams shipping in parallel. The system now powers over 120 components used in production.'
 outcomes:

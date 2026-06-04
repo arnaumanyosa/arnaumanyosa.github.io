@@ -4,7 +4,7 @@ subtitle: 'Real-time data visualization for a B2B SaaS platform'
 thumbnail: '../../assets/projects/one/photo-1551288049-bebda4e38f71.jpg'
 techstack: ['React', 'TypeScript', 'D3.js', 'GraphQL', 'PostgreSQL']
 period:
-  start: '2023-10'
+  start: '2021-10'
 roles: ['Senior Product Engineer', 'Frontend Lead']
 overview: 'Designed and built a real-time analytics dashboard for a B2B SaaS platform, replacing a third-party tool with a first-party experience that gave the sales team direct access to customer usage signals.'
 outcomes:

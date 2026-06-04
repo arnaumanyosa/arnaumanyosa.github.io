@@ -5,8 +5,8 @@ thumbnail: '../../assets/projects/four/photo-1512941937669-90a1b58e7e9c.jpg'
 liveUrl: 'https://apps.apple.com'
 techstack: ['React Native', 'TypeScript', 'Expo', 'Supabase', 'Figma']
 period:
-  start: '2021-09'
-  end: '2021-12'
+  start: '2002-09'
+  end: '2004-12'
 roles: ['Product Engineer', 'Mobile Lead']
 overview: 'Built and shipped a consumer health tracking app from zero to App Store in 14 weeks. Responsible for the full product loop: discovery, design, implementation, and launch.'
 outcomes:

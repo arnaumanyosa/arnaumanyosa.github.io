@@ -9,12 +9,12 @@ period:
 roles: ['Senior Product Engineer', 'Frontend Lead', 'Lead UX Designer']
 overview: 'SHL Medical includes in its portfolio the first connected autoinjectors, introducing a new generation of smart drug delivery devices. A cloud-based platform was needed to manage and monitor fleets of this devices across global clinical trials and treatments.'
 outcomes:
-  - title: 'Integrated Agile workflow'
-    description: 'Established common grown to integrate UX in the Agile process with the rest of the team'
-  - title: 'Common Design language'
-    description: 'A design system called Nova to use in all the different digital product in SHL Medical'
-  - title: 'Medical Device SaaS platform Solution'
-    description: 'Published first version of the solution'
+  - title: 'Agile design integration'
+    description: 'Established common grown to integrate UX in the Agile process with the rest of teams.'
+  - title: 'A design system'
+    description: 'It provided consistency and a shared foundation that streamlined both design and development workflows across teams.'
+  - title: 'State of the art medical device platform'
+    description: 'A single interface solution to track and manage medical devices in real time.'
 ---
 
 ## Context
@@ -32,6 +32,8 @@ Clinical trials or medical monitoring can be high-stakes operations. Is common t
 The obtained data can determine wheter a drug gets approved or a treatment is correctly been supplied and is having the expected outcome.
 
 When something goes wrong with a device — a firmware bug, a dead battery or an incorrect dosage — and nobody notices in time, the consequences cascade: missing data, protocol deviations, potentially months of delayed timelines costing millions and patient safety concerns.
+
+![Clinical trial screenshot](../../assets/projects/shldigital/clinical-trial.png)
 
 ## My process
 

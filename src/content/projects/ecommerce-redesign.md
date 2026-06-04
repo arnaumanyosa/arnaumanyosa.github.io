@@ -5,8 +5,8 @@ thumbnail: '../../assets/projects/three/photo-1556742049-0cfed4f6a45d.jpg'
 liveUrl: 'https://shop.example.com'
 techstack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'Vercel']
 period:
-  start: '2022-06'
-  end: '2022-11'
+  start: '2019-06'
+  end: '2019-11'
 roles: ['Product Engineer', 'Frontend Lead']
 overview: 'Rebuilt the checkout and product discovery experience for a mid-market e-commerce platform processing €50M in annual revenue. The redesign reduced cart abandonment and increased mobile conversion.'
 outcomes:
