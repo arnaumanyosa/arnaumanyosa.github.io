@@ -5,9 +5,23 @@ interface Props {
   techstack: string[];
   roles: string[];
   overview: string;
+  period: { start: string; end?: string };
 }
 
-const { techstack, roles, overview } = Astro.props;
+const { techstack, roles, overview, period } = Astro.props;
+
+function formatPeriod(start: string, end?: string) {
+  const fmt = (d: string) => {
+    const [year, month] = d.split('-');
+    return month
+      ? new Date(Number(year), Number(month) - 1).toLocaleDateString('en-US', {
+          month: 'long',
+          year: 'numeric',
+        })
+      : year;
+  };
+  return `${fmt(start)} – ${end ? fmt(end) : 'Present'}`;
+}
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-16 ">
@@ -18,6 +32,7 @@ const { techstack, roles, overview } = Astro.props;
     <p class="text-body leading-relaxed">{overview}</p>
   </div>
   <div class="space-y-6">
+    <p class="text-sm text-body">{formatPeriod(period.start, period.end)}</p>
     <div>
       <p class="text-xs text-subtle font-body tracking-widest uppercase mb-2">
         Role

@@ -7,30 +7,16 @@ interface Props {
   title: string;
   subtitle: string;
   thumbnail: ImageMetadata;
-  period: { start: string; end?: string };
   liveUrl?: string;
 }
 
-const { title, subtitle, thumbnail, period, liveUrl } = Astro.props;
-
-function formatPeriod(start: string, end?: string) {
-  const fmt = (d: string) => {
-    const [year, month] = d.split('-');
-    return month
-      ? new Date(Number(year), Number(month) - 1).toLocaleDateString('en-US', {
-          month: 'long',
-          year: 'numeric',
-        })
-      : year;
-  };
-  return `${fmt(start)} – ${end ? fmt(end) : 'Present'}`;
-}
+const { title, subtitle, thumbnail, liveUrl } = Astro.props;
 ---
 
 <div class="mb-10">
   <a
     href="/#projects"
-    class="inline-flex items-center gap-1.5 text-sm text-subtle hover:text-heading transition-colors mb-8 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
+    class="inline-flex items-center gap-1.5 text-sm text-subtle hover:text-heading transition-colors mb-8 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded -mx-4"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -56,11 +42,7 @@ function formatPeriod(start: string, end?: string) {
     {title}
   </h1>
 
-  <p class="text-xl leading-relaxed mb-2 max-w-2xl">{subtitle}</p>
-
-<p class="text-subtle text-xs font-body tracking-widest mb-4">
-    {formatPeriod(period.start, period.end)}
-  </p>
+  <p class="text-xl leading-relaxed mb-4 max-w-2xl">{subtitle}</p>
 
   {
     liveUrl && (

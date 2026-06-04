@@ -27,10 +27,9 @@ const { Content } = await render(project);
       title={title}
       subtitle={subtitle}
       thumbnail={thumbnail}
-      period={period}
       liveUrl={liveUrl}
     />
-    <ProjectMeta techstack={techstack} roles={roles} overview={overview} />
+    <ProjectMeta techstack={techstack} roles={roles} overview={overview} period={period} />
     <ProjectOutcomes outcomes={outcomes} />
     <ProjectBody>
       <Content />
