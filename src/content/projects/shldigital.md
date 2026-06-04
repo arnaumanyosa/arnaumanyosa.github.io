@@ -23,7 +23,7 @@ Connected medical devices are a relatively new frontier. Unlike mature IoT secto
 
 This immaturity presented both a challenge and an opportunity: there were no known competitors to benchmark against, but other platforms exist in different consumer fields with established mental models we could lean on.
 
-> There was no strong competitive benchmark to lean on. Patterns had to be established, not borrowed.
+> There was no strong competitive benchmark to lean on. New patterns had to be established.
 
 ## The challenge
 
@@ -34,6 +34,8 @@ The obtained data can determine wheter a drug gets approved or a treatment is co
 When something goes wrong with a device — a firmware bug, a dead battery or an incorrect dosage — and nobody notices in time, the consequences cascade: missing data, protocol deviations, potentially months of delayed timelines costing millions and patient safety concerns.
 
 ![Clinical trial screenshot](../../assets/projects/shldigital/clinical-trial.png)
+
+<center><figcaption>Clinical trial are complex</figcaption></center>
 
 ## My process
 

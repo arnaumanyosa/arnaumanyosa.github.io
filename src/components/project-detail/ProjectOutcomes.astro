@@ -12,7 +12,7 @@ const { outcomes } = Astro.props;
   outcomes.length > 0 && (
     <div class="mb-16">
       <h2 class="font-heading font-semibold text-heading text-2xl mb-6">Outcomes</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 -mx-6">
         {outcomes.map((outcome) => (
           <OutcomeCard title={outcome.title} description={outcome.description} />
         ))}

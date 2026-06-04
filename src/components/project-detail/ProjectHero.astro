@@ -27,7 +27,7 @@ function formatPeriod(start: string, end?: string) {
 }
 ---
 
-<div class="mb-12">
+<div class="mb-10">
   <a
     href="/#projects"
     class="inline-flex items-center gap-1.5 text-sm text-subtle hover:text-heading transition-colors mb-8 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
@@ -51,14 +51,14 @@ function formatPeriod(start: string, end?: string) {
   </a>
 
   <h1
-    class="font-heading font-semibold text-heading text-4xl sm:text-5xl leading-tight mb-2"
+    class="font-heading font-semibold text-heading text-4xl sm:text-5xl leading-tight"
   >
     {title}
   </h1>
 
   <p class="text-xl leading-relaxed mb-2 max-w-2xl">{subtitle}</p>
 
-  <p class="text-subtle text-sm font-body tracking-widest mb-6">
+<p class="text-subtle text-xs font-body tracking-widest mb-4">
     {formatPeriod(period.start, period.end)}
   </p>
 
