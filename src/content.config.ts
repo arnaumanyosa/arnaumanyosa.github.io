@@ -21,10 +21,10 @@ const about = defineCollection({
 
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     subtitle: z.string(),
-    thumbnail: z.string(),
+    thumbnail: image(),
     liveUrl: z.url().optional(),
     techstack: z.array(z.string()),
     period: z.object({
@@ -41,5 +41,6 @@ const projects = defineCollection({
     ),
   }),
 });
+
 
 export const collections = { about, projects };

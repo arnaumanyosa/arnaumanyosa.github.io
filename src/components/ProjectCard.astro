@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -14,7 +15,7 @@ const { title, subtitle, thumbnail } = project.data;
   href={`/projects/${project.id}`}
   class="group relative block aspect-4/3 overflow-hidden rounded bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border"
 >
-  <img
+  <Image
     src={thumbnail}
     alt={title}
     loading={eager ? 'eager' : 'lazy'}

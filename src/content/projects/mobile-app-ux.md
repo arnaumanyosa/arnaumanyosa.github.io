@@ -1,21 +1,21 @@
 ---
-title: "Health Tracking App"
-subtitle: "Zero-to-one consumer mobile product shipped in 14 weeks"
-thumbnail: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80"
-liveUrl: "https://apps.apple.com"
-techstack: ["React Native", "TypeScript", "Expo", "Supabase", "Figma"]
+title: 'Health Tracking App'
+subtitle: 'Zero-to-one consumer mobile product shipped in 14 weeks'
+thumbnail: '../../assets/projects/four/photo-1512941937669-90a1b58e7e9c.jpg'
+liveUrl: 'https://apps.apple.com'
+techstack: ['React Native', 'TypeScript', 'Expo', 'Supabase', 'Figma']
 period:
-  start: "2021-09"
-  end: "2021-12"
-roles: ["Product Engineer", "Mobile Lead"]
-overview: "Built and shipped a consumer health tracking app from zero to App Store in 14 weeks. Responsible for the full product loop: discovery, design, implementation, and launch."
+  start: '2021-09'
+  end: '2021-12'
+roles: ['Product Engineer', 'Mobile Lead']
+overview: 'Built and shipped a consumer health tracking app from zero to App Store in 14 weeks. Responsible for the full product loop: discovery, design, implementation, and launch.'
 outcomes:
-  - title: "4.7 App Store rating"
-    description: "The app launched with a 4.7 star rating from 312 initial reviews, driven by a focus on onboarding clarity and daily habit UX."
-  - title: "68% day-7 retention"
-    description: "Investing heavily in the onboarding and first-week habit formation flow resulted in day-7 retention of 68%, versus a category average of ~25%."
-  - title: "14-week zero-to-one"
-    description: "Tight scope discipline and a component-first React Native approach allowed a two-person team to ship a full consumer app in 14 weeks."
+  - title: '4.7 App Store rating'
+    description: 'The app launched with a 4.7 star rating from 312 initial reviews, driven by a focus on onboarding clarity and daily habit UX.'
+  - title: '68% day-7 retention'
+    description: 'Investing heavily in the onboarding and first-week habit formation flow resulted in day-7 retention of 68%, versus a category average of ~25%.'
+  - title: '14-week zero-to-one'
+    description: 'Tight scope discipline and a component-first React Native approach allowed a two-person team to ship a full consumer app in 14 weeks.'
 ---
 
 ## Challenge

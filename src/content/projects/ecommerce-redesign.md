@@ -1,21 +1,21 @@
 ---
-title: "E-Commerce UX Overhaul"
-subtitle: "Redesigning the checkout flow for a €50M/yr platform"
-thumbnail: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
-liveUrl: "https://shop.example.com"
-techstack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel"]
+title: 'E-Commerce UX Overhaul'
+subtitle: 'Redesigning the checkout flow for a €50M/yr platform'
+thumbnail: '../../assets/projects/three/photo-1556742049-0cfed4f6a45d.jpg'
+liveUrl: 'https://shop.example.com'
+techstack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'Vercel']
 period:
-  start: "2022-06"
-  end: "2022-11"
-roles: ["Product Engineer", "Frontend Lead"]
-overview: "Rebuilt the checkout and product discovery experience for a mid-market e-commerce platform processing €50M in annual revenue. The redesign reduced cart abandonment and increased mobile conversion."
+  start: '2022-06'
+  end: '2022-11'
+roles: ['Product Engineer', 'Frontend Lead']
+overview: 'Rebuilt the checkout and product discovery experience for a mid-market e-commerce platform processing €50M in annual revenue. The redesign reduced cart abandonment and increased mobile conversion.'
 outcomes:
-  - title: "22% drop in cart abandonment"
-    description: "Streamlining checkout from 5 steps to 2, with persistent cart state, brought abandonment from 71% to 49%."
-  - title: "18% increase in mobile conversion"
-    description: "A mobile-first rebuild of product pages and checkout reduced friction on the device responsible for 64% of traffic."
-  - title: "3× faster page load"
-    description: "Migrating from a legacy monolith to Next.js with image optimization and edge caching cut load time from 4.2s to 1.4s."
+  - title: '22% drop in cart abandonment'
+    description: 'Streamlining checkout from 5 steps to 2, with persistent cart state, brought abandonment from 71% to 49%.'
+  - title: '18% increase in mobile conversion'
+    description: 'A mobile-first rebuild of product pages and checkout reduced friction on the device responsible for 64% of traffic.'
+  - title: '3× faster page load'
+    description: 'Migrating from a legacy monolith to Next.js with image optimization and edge caching cut load time from 4.2s to 1.4s.'
 ---
 
 ## Challenge

@@ -1,10 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import Button from '../Button.astro';
 
 interface Props {
   title: string;
   subtitle: string;
-  thumbnail: string;
+  thumbnail: ImageMetadata;
   period: { start: string; end?: string };
   liveUrl?: string;
 }
@@ -85,8 +87,8 @@ function formatPeriod(start: string, end?: string) {
   }
 </div>
 
-<div class="aspect-[16/9] rounded overflow-hidden mb-16 bg-gray-50">
-  <img
+<div class="aspect-video rounded overflow-hidden mb-16 bg-gray-50">
+  <Image
     src={thumbnail}
     alt={title}
     loading="eager"

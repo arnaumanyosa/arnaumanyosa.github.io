@@ -1,19 +1,19 @@
 ---
-title: "Analytics Dashboard"
-subtitle: "Real-time data visualization for a B2B SaaS platform"
-thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
-techstack: ["React", "TypeScript", "D3.js", "GraphQL", "PostgreSQL"]
+title: 'Analytics Dashboard'
+subtitle: 'Real-time data visualization for a B2B SaaS platform'
+thumbnail: '../../assets/projects/one/photo-1551288049-bebda4e38f71.jpg'
+techstack: ['React', 'TypeScript', 'D3.js', 'GraphQL', 'PostgreSQL']
 period:
-  start: "2023-10"
-roles: ["Senior Product Engineer", "Frontend Lead"]
-overview: "Designed and built a real-time analytics dashboard for a B2B SaaS platform, replacing a third-party tool with a first-party experience that gave the sales team direct access to customer usage signals."
+  start: '2023-10'
+roles: ['Senior Product Engineer', 'Frontend Lead']
+overview: 'Designed and built a real-time analytics dashboard for a B2B SaaS platform, replacing a third-party tool with a first-party experience that gave the sales team direct access to customer usage signals.'
 outcomes:
-  - title: "Replaced €80K/yr third-party tool"
-    description: "Building first-party replaced an €80K annual Mixpanel contract while giving the team full control over the data model."
-  - title: "30% increase in sales-qualified leads"
-    description: "Sales reps using product usage signals to prioritize outreach saw a 30% increase in meetings booked within the first quarter."
-  - title: "Sub-second dashboard load"
-    description: "Query optimization and incremental data loading kept all dashboard views under 800ms despite processing millions of events."
+  - title: 'Replaced €80K/yr third-party tool'
+    description: 'Building first-party replaced an €80K annual Mixpanel contract while giving the team full control over the data model.'
+  - title: '30% increase in sales-qualified leads'
+    description: 'Sales reps using product usage signals to prioritize outreach saw a 30% increase in meetings booked within the first quarter.'
+  - title: 'Sub-second dashboard load'
+    description: 'Query optimization and incremental data loading kept all dashboard views under 800ms despite processing millions of events.'
 ---
 
 ## Challenge
