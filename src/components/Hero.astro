@@ -8,7 +8,7 @@ const sentences = slogan.split('.').filter(sentence => sentence.trim().length > 
 ---
 
 <section id="hero" class="hero-bg relative min-h-svh">
-  <div class="max-w-5xl mx-auto flex flex-col justify-center min-h-svh px-6">
+  <div class="max-w-5xl mx-auto flex flex-col justify-center min-h-svh">
     {sentences.map(sentence => <p class="text-xl sm:text-2xl md:text-3xl leading-relaxed mb-1">{sentence}.</p>)}
   </div>
 </section>
