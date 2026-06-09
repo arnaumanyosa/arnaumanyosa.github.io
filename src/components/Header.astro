@@ -7,23 +7,28 @@ interface Props {
 }
 
 const { personName, personRole } = Astro.props;
+const roles = personRole?.split(',').map(r => r.trim()).filter(Boolean) ?? [];
+const duration = roles.length * 3;
 ---
 
-<header
-  class="fixed top-0 left-0 right-0 z-50 bg-white p-6"
->
-  <div class="max-w-5xl mx-auto  flex items-center justify-between">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white p-6">
+  <div class="max-w-5xl mx-auto flex items-center justify-between">
     {
       personName && (
-        <div
-          id="header-reveal"
-          class="flex flex-col gap-2"
-        >
+        <div id="header-reveal" class="flex flex-col gap-2">
           <div class="font-heading font-semibold text-heading text-sm leading-none">
             {personName}
           </div>
-          <div class="font-heading text-subtle text-xs tracking-widest leading-none">
-            {personRole}
+          <div class="relative h-[1em] font-heading text-subtle text-xs tracking-widest leading-none">
+            <span>Senior</span>
+            {roles.map((role, i) => (
+              <span
+                class="absolute inset-0 whitespace-nowrap px-12"
+                style={`animation: role-cycle ${duration}s infinite ${i * 3}s both;`}
+              >
+                {role}
+              </span>
+            ))}
           </div>
         </div>
       )
@@ -32,4 +37,16 @@ const { personName, personRole } = Astro.props;
   </div>
 </header>
 
+<style>
+  @keyframes role-cycle {
+    0%       { opacity: 0; }
+    5%       { opacity: 1; }
+    28%      { opacity: 1; }
+    33%      { opacity: 0; }
+    100%     { opacity: 0; }
+  }
 
+  @media (prefers-reduced-motion: reduce) {
+    span[style*="role-cycle"] { animation: none; opacity: 1; }
+  }
+</style>
