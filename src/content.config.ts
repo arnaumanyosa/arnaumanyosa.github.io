@@ -9,7 +9,7 @@ const about = defineCollection({
     role: z.string(),
     email: z.email(),
     location: z.string(),
-    heroSlogan: z.string(),
+    slogans: z.array(z.string()),
     facts: z.array(z.object({ label: z.string(), value: z.string() })),
     socialLinks: z.object({
       linkedin: z.url(),
@@ -21,26 +21,26 @@ const about = defineCollection({
 
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    subtitle: z.string(),
-    thumbnail: image(),
-    liveUrl: z.url().optional(),
-    techstack: z.array(z.string()),
-    period: z.object({
-      start: z.string(),
-      end: z.string().optional(),
-    }),
-    roles: z.array(z.string()),
-    overview: z.string(),
-    outcomes: z.array(
-      z.object({
-        title: z.string(),
-        description: z.string(),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      subtitle: z.string(),
+      thumbnail: image(),
+      liveUrl: z.url().optional(),
+      techstack: z.array(z.string()),
+      period: z.object({
+        start: z.string(),
+        end: z.string().optional(),
       }),
-    ),
-  }),
+      roles: z.array(z.string()),
+      overview: z.string(),
+      outcomes: z.array(
+        z.object({
+          title: z.string(),
+          description: z.string(),
+        }),
+      ),
+    }),
 });
-
 
 export const collections = { about, projects };

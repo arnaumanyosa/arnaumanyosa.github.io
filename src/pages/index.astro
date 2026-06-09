@@ -15,7 +15,7 @@ if (!about) throw new Error('about.md not found');
   personName={about.data.completeName}
   personRole={about.data.role}
 >
-  <Hero slogan={about.data.heroSlogan} />
+  <Hero slogans={about.data.slogans} />
   <Projects />
   <About about={about} />
   <Contact email={about.data.email} socialLinks={about.data.socialLinks} />
