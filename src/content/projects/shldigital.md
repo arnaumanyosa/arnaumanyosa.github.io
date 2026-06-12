@@ -63,6 +63,10 @@ This wasn't a substitute for direct user research, but it built enough foundatio
 
 SHL.digital serves as the central hub for managing device fleets, though additional web applications were outlined as part of the broader ecosystem strategy. The development team was small but steadily expanding. Considering these factors, one of my initial proposals was to establish a design system that would provide a shared foundation—ensuring consistency while streamlining and optimizing both design and development processes.
 
+![Colors on the design system](../../assets/projects/shldigital/colors.png)
+
+<center><figcaption>Colors on the design system</figcaption></center>
+
 ## Personas
 
 Working with product and customer-facing teams, we identified the key user archetypes based on what they need to do and what a they are responsible for. This produced provisional personas that drive design decisions while acknowledging they'd need validation and refinement over time.
@@ -78,6 +82,10 @@ Working with product and customer-facing teams, we identified the key user arche
 Working closely with the Product Owner, I led weekly alignment meetings to present iterative updates, gather feedback, and refine the solution based on evolving user pain points and business requirements. This continuous feedback loop allowed us to prioritize effectively, address usability challenges early, and ensure the product remained aligned with stakeholder expectations throughout development.
 
 Once the MVP was deployed, we organized structured test trials with several pharma clients. These sessions provided valuable real-world insights, enabling us to validate our design and functional decisions under practical conditions. The feedback was very positive, confirming strong product-market fit and achieving a high success rate in meeting both user needs and operational requirements.
+
+![Tracking the device in real time](../../assets/projects/shldigital/track01.png)
+
+<center><figcaption>Tracking the device in real time</figcaption></center>
 
 ## Outcomes
 
