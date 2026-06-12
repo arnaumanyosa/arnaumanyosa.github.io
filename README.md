@@ -1,0 +1,32 @@
+# Portfolio
+
+Personal portfolio website built with Astro, Tailwind CSS v4, and Vite.
+
+## Stack
+
+- [Astro 6](https://astro.build) — static site generation, content collections
+- [Tailwind CSS v4](https://tailwindcss.com) — utility-first styling via Vite plugin
+- [Poppins](https://fonts.google.com/specimen/Poppins) / [DM Sans](https://fonts.google.com/specimen/DM+Sans) — typography
+
+## Commands
+
+```bash
+npm install        # install dependencies
+npm run dev        # dev server at localhost:4321
+npm run build      # production build to dist/
+npm run preview    # preview production build
+npm run astro check  # TypeScript type check
+```
+
+## Content
+
+All content lives in `src/content/` as Markdown files.
+
+- `about.md` — personal info (frontmatter) and bio (body)
+- `projects/*.md` — one file per project; body follows CAR structure (Challenge, Actions, Results)
+
+Project images go in `src/assets/projects/<project-name>/`. Reference them in frontmatter with a path relative to the `.md` file (e.g. `../../assets/projects/my-project/cover.jpg`). Astro processes them through the image optimization pipeline.
+
+## Deployment
+
+Configured for static output. Set `site` in `astro.config.mjs` to the production URL before building.
