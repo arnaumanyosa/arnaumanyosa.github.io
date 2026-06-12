@@ -14,9 +14,11 @@ const { title, subtitle, thumbnail, liveUrl } = Astro.props;
 ---
 
 <div class="mb-10">
+  <div class="fixed top-0 left-0 right-0 z-50 bg-white">
+    <div class="max-w-4xl mx-auto px-6 py-6">
   <a
     href="/#projects"
-    class="inline-flex items-center gap-1.5 text-sm text-subtle hover:text-heading transition-colors mb-8 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded -mx-4"
+    class="inline-flex items-center gap-1.5 text-sm text-subtle hover:text-heading transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border rounded"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -35,6 +37,8 @@ const { title, subtitle, thumbnail, liveUrl } = Astro.props;
     </svg>
     Back to Selected work
   </a>
+    </div>
+  </div>
 
   <h1
     class="font-heading font-semibold text-heading text-4xl sm:text-5xl leading-tight"
