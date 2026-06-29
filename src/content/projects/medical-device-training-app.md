@@ -7,7 +7,7 @@ period:
   start: '2025-01'
   end: '2025-06'
 roles: ['Lead UX Designer']
-overview: 'To bridge the gap between complex hardware and patient safety, I led the design and conceptual development of an event-driven onboarding mobile-first web application. The goal was to create a seamless, "hands-free" instructional experience where the application reacts in real-time to physical interactions with the device.'
+overview: 'To bridge the gap between complex hardware and patient safety, I led the design and conceptual development of an event-driven onboarding mobile-first web application. The goal was to create a seamless, "hands-free" instructional experience where the application reacts in real-time to physical interactions with the device. Original image @LauraChouette.'
 outcomes:
   - title: 'Zero-touch concept'
     description: 'Successfully designed a seamless, hands-free interaction concept that minimizes manual touchpoints, enhancing the user experience and significantly reducing the risk of error.'
