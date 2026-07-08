@@ -7,7 +7,7 @@ techstack: ['TypeScript', 'React', 'SASS', 'Browser Extension', 'REST API']
 period:
   start: '2021-07'
   end: '2022-12'
-roles: ['Lead Frontend', 'Product Designer']
+roles: ['Lead Frontend Developer']
 overview: 'As the founding engineer and lead frontend architect, I built the foundations of Witty — a cross-browser extension that helps users write in a more inclusive way. Witty analyzes user input in real-time, providing immediate feedback and guidance on unbiased language across virtually any website.'
 outcomes:
   - title: 'Concept to launch in 3 months'
