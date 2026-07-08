@@ -1,13 +1,13 @@
 ---
 completeName: 'Arnau Manyosa-Plaza'
-role: 'Product Engineer, Design Engineer, UX Engineer, Wear many hats'
+role: 'Frontend Developer, UI/UX Designer, Product Engineer, UX Engineer'
 email: 'hello@arnau.me'
 location: 'Zurich, Switzerland'
 slogans:
   [
     'I designed a SaaS UI to manage and track thousands of medical devices.',
     'I built a web extension that grew to 10K+ users with store rating >4.5 and a 166% revenue increase within the first 18months.',
-    'Lead UX Designer & Software Developer with 18+ years creating the best digital experiences.',
+    'Senior UX Designer & Software Developer with 18+ years creating the best digital experiences.',
   ]
 facts:
   - label: 'Years of experience'
