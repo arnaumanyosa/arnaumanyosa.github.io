@@ -19,17 +19,17 @@ outcomes:
 
 ## Challenge: Bridging the physical-digital gap in medical onboarding
 
-In medical administration, user attention must be centered on the patient and the device. Traditional onboarding apps require constant manual interaction (tapping, scrolling, clicking), which requires an important cognitive load and creates a dangerous "split-attention" effect.
+In medical administration, user attention must be centered on the patient and the device. Traditional on-boarding apps require constant manual interaction (tapping, scrolling, clicking), which requires an important cognitive load and creates a dangerous "split-attention" effect.
 
 The challenge was to design a digital experience that feels "magical", with a WOW effect. A system that could "sense" the user’s interaction with the medical device, freeing the user from worrying about the application.
 
 ## The process: A multidisciplinary approach
 
-As the Lead UI/UX designer, I didn't just designedsome beautiful visuals and an interaction flow. I designed a syncronized system. My process involved epp integration accros three pillars:
+As the Lead UI/UX designer, I didn't just designed some beautiful visuals and an interaction flow. I designed a synchronized system. My process involved epp integration accros three pillars:
 
 ### Concept & design leadership
 
-Our persona analysis highlighted the need for an intuitive onboarding experience to accommodate varying levels of technical proficiency and high-distraction environments. Given the high stakes of a medical setting, we prioritized simplicity to mitigate the risk of user error and ensure patient safety.
+Our persona analysis highlighted the need for an intuitive on-boarding experience to accommodate varying levels of technical proficiency and high-distraction environments. Given the high stakes of a medical setting, we prioritized simplicity to mitigate the risk of user error and ensure patient safety.
 
 For this I defined a new interaction model for the entire user journey. Instead of traditional navigation, I developed a state-driven logic where the medical device acts as the primary input. This required mapping every possible hardware state (Power On → Loaded drug → Injection In-Progress → Completion) to a corresponding UI response.
 
@@ -37,7 +37,7 @@ For this I defined a new interaction model for the entire user journey. Instead 
 
 ### Cross-functional collaboration
 
-I collaborated closely with differennt stakeholders through an iterative process to transform this concept into a polished, final product:
+I collaborated closely with different stakeholders through an iterative process to transform this concept into a polished, final product:
 
 - With the product owner: I translated business requirements and user needs into intuitive user flows, periodically discussed with the product owner to ensure that the application complemented the use of the medical device.
 
@@ -49,7 +49,7 @@ To ensure the concept worked in real-world conditions, I led user testing sessio
 
 ## Results: Minimizing Cognitive Load through Automation
 
-The prototype successfully demonstrates a "hands-free" training workflow. By shifting the burden of navigation from the user to the device’s even data, we minimized manual touchpoints. This results in a safer, more intuitive user experience that keeps the patient's attention exactly where it needs to be.
+The prototype successfully demonstrates a "hands-free" training workflow. By shifting the burden of navigation from the user to the device’s even data, we minimized manual touch-points. This results in a safer, more intuitive user experience that keeps the patient's attention exactly where it needs to be.
 
 ![Some prototype screens](../../assets/projects/medical-device-training-app/screens.png)
 
