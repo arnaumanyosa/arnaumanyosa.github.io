@@ -25,7 +25,7 @@ The challenge was to design a digital experience that feels "magical", with a WO
 
 ## The process: A multidisciplinary approach
 
-As the Lead UI/UX designer, I didn't just designed some beautiful visuals and an interaction flow. I designed a synchronized system. My process involved epp integration accros three pillars:
+As the Lead UI/UX designer, I didn't just designed some beautiful visuals and an interaction flow. I designed a synchronized system. My process involved app integration across three pillars:
 
 ### Concept & design leadership
 
