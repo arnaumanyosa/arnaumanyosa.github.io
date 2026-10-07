@@ -33,7 +33,7 @@ This immaturity presented both a challenge and an opportunity: there were no kno
 
 ### The challenge
 
-Clinical trials or medical monitoring can be high-stakes operations. Is common that they involve hundreds of sites accros dozens of countries, thousands of patients and tens of thousands of connected devices. Managing medical operations require an extensive number of different professionals with different tasks, goals and pain points.
+Clinical trials or medical monitoring can be high-stakes operations. Is common that they involve hundreds of sites across dozens of countries, thousands of patients and tens of thousands of connected devices. Managing medical operations require an extensive number of different professionals with different tasks, goals and pain points.
 
 The obtained data can determine wheter a drug gets approved or a treatment is correctly been supplied and is having the expected outcome.
 
